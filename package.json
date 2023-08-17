@@ -1,0 +1,19 @@
+{
+  "name": "mern-typescript",
+  "version": "1.0.0",
+  "description": "MERN(MongoDB, Express, React, Node), Socket.io, Typescript",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently --kill-others \"yarn dev:server\" \"yarn dev:app\"",
+    "dev:server": "cd server && yarn start",
+    "dev:app": "cd app && yarn start",
+    "install:server": "cd server && yarn",
+    "install:app": "cd app && yarn",
+    "postinstall": "yarn install:server && yarn install:app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
