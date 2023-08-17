@@ -7,7 +7,11 @@
 ## Install dependencies
 ```sh
 yarn 
+```
+
 or
+
+```sh
 npm install
 ```
 
